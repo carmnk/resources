@@ -119,6 +119,7 @@ table head is represented by MUI's TableHead component. TableHeadProps allows yo
 table pagination is represented by MUI's TablePagination component. TablePaginationProps allows you to provide an object with MUI's TablePagination Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-pagination/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableProps`\) 
+Table Props
 @remark table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table/ for MUI propertys.\
 e.g. <CTable TableProps={{size: "small", padding: "none"}}/>
 @nospec MUI component propertys
@@ -144,4 +145,3 @@ Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 determines whether or not header is sticky, if true doColorRows is not effective, header can only be customized with stickyHeader class or by MUI theme's default background (see [classes](#classes))
 ### \(`useToolbar`\) 
 determines whether or not to use the toolbar, currently just containing title
-@carmnk
