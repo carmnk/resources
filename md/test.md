@@ -45,7 +45,7 @@ default class's background is theme.palette.background.default
 
 example\
 JS:
-```
+```ts
 const myclasses= makeStyles(theme => ({
 head: {background: blue,},
 "@media(pointer: fine)": {
@@ -54,7 +54,7 @@ head: {background: blue,},
 }));
 ```
 JSX:
-```
+```ts
 <CTable classes={myclasses}\>
 ```
 ### \(`conditionalCellClass`\) 
@@ -62,7 +62,7 @@ Method conditionalCellClass can be provided to highlight/modify certain specific
 Method is called when rendering table. The following parameters are passed: (icol, irow, colkey, rowcontent).\
 your method can perform some conditional checks based on parameters and can return a MUI class (if your condition is fulfilled).\
 example:
-```
+```ts
 <CTable conditionalCellClass={(icol, irow, colkey, rowcontent) => {
    if (irow === 1 && icol === 0) return specialcellclass
 }} />
@@ -72,7 +72,7 @@ similar to conditionalCellClass but used to highlight/modify whole rows.
 Method is called when rendering table. The following parameters are passed: (irow).\
 your method can perform some conditional checks based on parameters and can return a MUI class (if your condition is fulfilled).\
 example:
-```
+```ts
 <CTable conditionalRowClass={irow => {
 if (irow === 0) return specialrowclass
 }} />
@@ -82,7 +82,7 @@ data to be displayed shapes as Array of Objects. A dataset (row) is represented 
 Data is filled by sequence! of object propertys (not their property key!). Empty cells must be provided by property containing empty string.\
 But! Data's property keys must be same for 1 column to provide sorting functionality.\
 example:
-```
+```ts
 data=[{col1: 1, col2: 2, col3: 3}, {col1: 4, col2: 5, col3: 6},]
 ```
 ### \(`doColorHeadRow`\) 
