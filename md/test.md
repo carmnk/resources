@@ -1,25 +1,25 @@
-# `<CTableDocu />`
+# `<CTable />`
 react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.
 | Name        | Type           | Default  | Required  |
 | ------------- |:-------------:| -----:| -----:|
 | [classes](#classes) | { rows?: string; roweven?: string; rowodd?: string; head?: string; selected?: string; "@media(pointer: fine)"?: string; stickyHeader?: string; } | {} |  |
 | [conditionalCellClass](#conditionalCellClass) | (icol: number, irow: number, colkey: string, colcontent: string) => string | ? |  |
 | [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ? |  |
-| [data](#data) | { [key: string]: string; }[] | ? | [x] |
+| [data](#data) | { [key: string]: string; }[] | ? | ✔️ |
 | [doColorHeadRow](#doColorHeadRow) | boolean | true |  |
 | [doColorRows](#doColorRows) | boolean | true |  |
 | [header](#header) | { id: string; numeric?: boolean; disablePadding?: boolean; label?: string; align?: Alignment; }[] | [] |  |
 | [preview](#preview) | number | 0 |  |
-| [size](#size) | ```TODO ❌``` | ```TODO ❌ ``` |  |
-| [TableBodyProps](#TableBodyProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
-| [TableCheckboxProps](#TableCheckboxProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
-| [TableContainerProps](#TableContainerProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
-| [TableHeadProps](#TableHeadProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
-| [TablePaginationProps](#TablePaginationProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
-| [TableProps](#TableProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
+| [size](#size) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
+| [TableBodyProps](#TableBodyProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
+| [TableCheckboxProps](#TableCheckboxProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
+| [TableContainerProps](#TableContainerProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
+| [TableHeadProps](#TableHeadProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
+| [TablePaginationProps](#TablePaginationProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
+| [TableProps](#TableProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
 | [title](#title) | string | Title 1235813 |  |
-| [ToolbarProps](#ToolbarProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
-| [ToolbarTypoProps](#ToolbarTypoProps) | ```TODO ❌``` | ```TODO ❌ ``` |  |
+| [ToolbarProps](#ToolbarProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
+| [ToolbarTypoProps](#ToolbarTypoProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
 | [useHeader](#useHeader) | boolean | true |  |
 | [usePagination](#usePagination) | boolean | true |  |
 | [useSelectableAllRows](#useSelectableAllRows) | boolean | true |  |
@@ -30,15 +30,15 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 ### \(`classes`\) 
 object containing custom classes (made with MUIs makeStyles() hook, only those hook classes working?)\
 supported classes:
-- rows: superseeds roweven and rowodd, [[doColorRows]] must be true
-- roweven: even rows (first row is 0), [[doColorRows]] must be true
-- rowodd: odd rows (first row is 0), [[doColorRows]] must be true\
+- rows: superseeds roweven and rowodd, [doColorRows](#doColorRows) must be true
+- roweven: even rows (first row is 0), [doColorRows](#doColorRows) must be true
+- rowodd: odd rows (first row is 0), [doColorRows](#doColorRows) must be true\
 default class's background is "#bdbdbd" if MUI theme is light otherwise (dark) it's "#757575"
-- head: header row, [[doColorHeadRow]] must be true and [[useStickyHeader]] false\
+- head: header row, [doColorHeadRow](#doColorHeadRow) must be true and [useStickyHeader](#useStickyHeader) false\
 default class's background is "#757575" if MUI theme is light otherwise (dark) it's "#bdbdbd"
 - seleceted: selected rows, \
 default class's background is determined by MUI theme: theme.palette.primary.main
-- stickyHeader: class for sticky header if [[useStickyHeader]] is true, (doColorHeadRow is not active) \
+- stickyHeader: class for sticky header if [useStickyHeader](#useStickyHeader) is true, (doColorHeadRow is not active) \
 default class's background is theme.palette.background.default
 - "@media(pointer: fine)": css-media-query for pointers(not touch devices) intended to apply custom mouse hover effect for previously provided classes (rows, roweven...), see code example below. \
   by default: mouse hover effect for roweven, rowodd, selected is applied. Their hover background color is "#757575" if MUI theme is light otherwise (dark) it's "#bdbdbd"
@@ -86,8 +86,8 @@ example:
 data=[{col1: 1, col2: 2, col3: 3}, {col1: 4, col2: 5, col3: 6},]
 ```
 ### \(`doColorHeadRow`\) 
-determines whether header class (see [[classes]]) shall be applied to table header\
-[[useStickyHeader]] must be false.
+determines whether header class (see [classes](#classes)) shall be applied to table header\
+[useStickyHeader](#useStickyHeader) must be false.
 ### \(`doColorRows`\) 
 determines whether or not to color the table rows
 ### \(`header`\) 
@@ -122,7 +122,7 @@ table is represented by MUI's Table component. TableProps allows you to provide 
 e.g. <CTable TableProps={{size: "small", padding: "none"}}/>
 @nospec MUI component propertys
 ### \(`title`\) 
-table title to display if [[useToolbar]] is true
+table title to display if [useToolbar](#useToolbar) is true
 ### \(`ToolbarProps`\) 
 table toolbar is represented by MUI's Toolbar component. ToolbarProps allows you to provide an object with MUI's Toolbar Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/toolbar/ for MUI propertys.
 @nospec MUI component propertys
@@ -135,10 +135,10 @@ determines whether or not to use the header row if property header is provided
 determines whether or not to use pagination
 ### \(`useSelectableAllRows`\) 
 determines whether all rows can be selected by clicking/touching the header's checkbox.\
-[[useSelectableRows]] must be true. Checkboxes can be customized by using [[TableCheckboxProps]].
+[useSelectableRows](#useSelectableRows) must be true. Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useSelectableRows`\) 
 determines whether rows can be selected. If true an additional checkbox column is added on left side of table.\
-Checkboxes can be customized by using [[TableCheckboxProps]].
+Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useStickyHeader`\) 
 determines whether or not header is sticky, if true doColorRows is not effective, header can only be customized with stickyHeader class or by MUI theme's default background (see [[classes]])
 ### \(`useToolbar`\) 
