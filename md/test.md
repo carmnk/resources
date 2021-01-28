@@ -5,7 +5,7 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 | [classes](#classes) | { rows?: string; roweven?: string; rowodd?: string; head?: string; selected?: string; "@media(pointer: fine)"?: string; stickyHeader?: string; } | {} |  |
 | [conditionalCellClass](#conditionalCellClass) | (icol: number, irow: number, colkey: string, colcontent: string) => string | ? |  |
 | [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ? |  |
-| [data](#data) | { [key: string]: string; }[] | [] |  |
+| [data](#data) | { [key: string]: string; }[] | ? | [x] |
 | [doColorHeadRow](#doColorHeadRow) | boolean | true |  |
 | [doColorRows](#doColorRows) | boolean | true |  |
 | [header](#header) | { id: string; numeric?: boolean; disablePadding?: boolean; label?: string; align?: Alignment; }[] | [] |  |
