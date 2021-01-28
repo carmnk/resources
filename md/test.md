@@ -10,7 +10,10 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 | doColorRows | boolean | true | 
 | header | { id: string; numeric?: boolean; disablePadding?: boolean; label?: string; align?: Alignment; }[] | [] | 
 | preview | number | 0 | 
-| size | ```diff ! TODO ``` | ```diff ! TODO ``` | 
+| size | ```diff 
+- TODO 
+``` 
+| ```diff + TODO ``` | 
 | TableBodyProps | ```diff ! TODO ``` | ```diff ! TODO ``` | 
 | TableCheckboxProps | ```diff ! TODO ``` | ```diff ! TODO ``` | 
 | TableContainerProps | ```diff ! TODO ``` | ```diff ! TODO ``` | 
