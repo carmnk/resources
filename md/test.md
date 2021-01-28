@@ -50,4 +50,4 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 ### `<useSelectableAllRows />`
 ### `<useSelectableRows />`
 ### `<useStickyHeader />`
-### `<useToolbar>`
+### <`useToolbar /`>
