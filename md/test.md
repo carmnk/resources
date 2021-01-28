@@ -2,30 +2,30 @@
 react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.
 | Name        | Type           | Default  |
 | ------------- |:-------------:| -----:|
-| [classes](propName) | { rows?: string; roweven?: string; rowodd?: string; head?: string; selected?: string; "@media(pointer: fine)"?: string; stickyHeader?: string; } | {} | 
-| [conditionalCellClass](propName) | (icol: number, irow: number, colkey: string, colcontent: string) => string | ? | 
-| [conditionalRowClass](propName) | (irow: number) => string | ? | 
-| [data](propName) | { [key: string]: string; }[] | [] | 
-| [doColorHeadRow](propName) | boolean | true | 
-| [doColorRows](propName) | boolean | true | 
-| [header](propName) | { id: string; numeric?: boolean; disablePadding?: boolean; label?: string; align?: Alignment; }[] | [] | 
-| [preview](propName) | number | 0 | 
-| [size](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [TableBodyProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [TableCheckboxProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [TableContainerProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [TableHeadProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [TablePaginationProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [TableProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [title](propName) | string | Title 1235813 | 
-| [ToolbarProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [ToolbarTypoProps](propName) | ```TODO ❌``` | ```TODO ❌ ``` | 
-| [useHeader](propName) | boolean | true | 
-| [usePagination](propName) | boolean | true | 
-| [useSelectableAllRows](propName) | boolean | true | 
-| [useSelectableRows](propName) | boolean | true | 
-| [useStickyHeader](propName) | boolean | true | 
-| [useToolbar](propName) | boolean | true | 
+| [classes](#classes) | { rows?: string; roweven?: string; rowodd?: string; head?: string; selected?: string; "@media(pointer: fine)"?: string; stickyHeader?: string; } | {} | 
+| [conditionalCellClass](#conditionalCellClass) | (icol: number, irow: number, colkey: string, colcontent: string) => string | ? | 
+| [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ? | 
+| [data](#data) | { [key: string]: string; }[] | [] | 
+| [doColorHeadRow](#doColorHeadRow) | boolean | true | 
+| [doColorRows](#doColorRows) | boolean | true | 
+| [header](#header) | { id: string; numeric?: boolean; disablePadding?: boolean; label?: string; align?: Alignment; }[] | [] | 
+| [preview](#preview) | number | 0 | 
+| [size](#size) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [TableBodyProps](#TableBodyProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [TableCheckboxProps](#TableCheckboxProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [TableContainerProps](#TableContainerProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [TableHeadProps](#TableHeadProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [TablePaginationProps](#TablePaginationProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [TableProps](#TableProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [title](#title) | string | Title 1235813 | 
+| [ToolbarProps](#ToolbarProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [ToolbarTypoProps](#ToolbarTypoProps) | ```TODO ❌``` | ```TODO ❌ ``` | 
+| [useHeader](#useHeader) | boolean | true | 
+| [usePagination](#usePagination) | boolean | true | 
+| [useSelectableAllRows](#useSelectableAllRows) | boolean | true | 
+| [useSelectableRows](#useSelectableRows) | boolean | true | 
+| [useStickyHeader](#useStickyHeader) | boolean | true | 
+| [useToolbar](#useToolbar) | boolean | true | 
 
 ### \(`classes`\) 
 ### \(`conditionalCellClass`\) 
