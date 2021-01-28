@@ -1,11 +1,12 @@
 # `<CTable />`
 react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.
+
 | Name        | Type           | Default  | Required  |
 | ------------- |:-------------:| -----:| -----:|
 | [classes](#classes) | { rows?: string; roweven?: string; rowodd?: string; head?: string; selected?: string; "@media(pointer: fine)"?: string; stickyHeader?: string; } | {} |  |
-| [conditionalCellClass](#conditionalCellClass) | (icol: number, irow: number, colkey: string, colcontent: string) => string | ? |  |
-| [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ? |  |
-| [data](#data) | { [key: string]: string; }[] | ? | ✔️ |
+| [conditionalCellClass](#conditionalCellClass) | (icol: number, irow: number, colkey: string, colcontent: string) => string | ??? |  |
+| [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ??? |  |
+| [data](#data) | { [key: string]: string; }[] | ??? | ✔️ |
 | [doColorHeadRow](#doColorHeadRow) | boolean | true |  |
 | [doColorRows](#doColorRows) | boolean | true |  |
 | [header](#header) | { id: string; numeric?: boolean; disablePadding?: boolean; label?: string; align?: Alignment; }[] | [] |  |
@@ -118,7 +119,7 @@ table head is represented by MUI's TableHead component. TableHeadProps allows yo
 table pagination is represented by MUI's TablePagination component. TablePaginationProps allows you to provide an object with MUI's TablePagination Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-pagination/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableProps`\) 
-table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table/ for MUI propertys.\
+@remark table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table/ for MUI propertys.\
 e.g. <CTable TableProps={{size: "small", padding: "none"}}/>
 @nospec MUI component propertys
 ### \(`title`\) 
@@ -140,6 +141,7 @@ determines whether all rows can be selected by clicking/touching the header's ch
 determines whether rows can be selected. If true an additional checkbox column is added on left side of table.\
 Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useStickyHeader`\) 
-determines whether or not header is sticky, if true doColorRows is not effective, header can only be customized with stickyHeader class or by MUI theme's default background (see [[classes]])
+determines whether or not header is sticky, if true doColorRows is not effective, header can only be customized with stickyHeader class or by MUI theme's default background (see [classes](#classes))
 ### \(`useToolbar`\) 
 determines whether or not to use the toolbar, currently just containing title
+@carmnk
