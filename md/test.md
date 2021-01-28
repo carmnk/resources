@@ -119,10 +119,8 @@ table head is represented by MUI's TableHead component. TableHeadProps allows yo
 table pagination is represented by MUI's TablePagination component. TablePaginationProps allows you to provide an object with MUI's TablePagination Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-pagination/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableProps`\) 
-Table Props
-@remark table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table/ for MUI propertys.\
+table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table/ for MUI propertys.\
 e.g. <CTable TableProps={{size: "small", padding: "none"}}/>
-@nospec MUI component propertys
 ### \(`title`\) 
 table title to display if [useToolbar](#useToolbar) is true
 ### \(`ToolbarProps`\) 
