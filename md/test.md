@@ -25,7 +25,7 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 | [[useSelectableAllRows]] | boolean | true | 
 | [[useSelectableRows]] | boolean | true | 
 | [[useStickyHeader]] | boolean | true | 
-| [[useToolbar]] | boolean | true | 
+| [useToolbar] | boolean | true | 
 
 ### `<classes />`
 ### `<conditionalCellClass />`
