@@ -25,29 +25,29 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 | [[useSelectableAllRows]] | boolean | true | 
 | [[useSelectableRows]] | boolean | true | 
 | [[useStickyHeader]] | boolean | true | 
-| [useToolbar](#useToolbar) | boolean | true | 
+| [[useToolbar]] | boolean | true | 
 
-### `<classes />`
-### `<conditionalCellClass />`
-### `<conditionalRowClass />`
-### `<data />`
-### `<doColorHeadRow />`
-### `<doColorRows />`
-### `<header />`
-### `<preview />`
-### `<size />`
-### `<TableBodyProps />`
-### `<TableCheckboxProps />`
-### `<TableContainerProps />`
-### `<TableHeadProps />`
-### `<TablePaginationProps />`
-### `<TableProps />`
-### `<title />`
-### `<ToolbarProps />`
-### `<ToolbarTypoProps />`
-### `<useHeader />`
-### `<usePagination />`
-### `<useSelectableAllRows />`
-### `<useSelectableRows />`
-### `<useStickyHeader />`
-### \(`useToolbar`\)
+### \(`classes`\) 
+### \(`conditionalCellClass`\) 
+### \(`conditionalRowClass`\) 
+### \(`data`\) 
+### \(`doColorHeadRow`\) 
+### \(`doColorRows`\) 
+### \(`header`\) 
+### \(`preview`\) 
+### \(`size`\) 
+### \(`TableBodyProps`\) 
+### \(`TableCheckboxProps`\) 
+### \(`TableContainerProps`\) 
+### \(`TableHeadProps`\) 
+### \(`TablePaginationProps`\) 
+### \(`TableProps`\) 
+### \(`title`\) 
+### \(`ToolbarProps`\) 
+### \(`ToolbarTypoProps`\) 
+### \(`useHeader`\) 
+### \(`usePagination`\) 
+### \(`useSelectableAllRows`\) 
+### \(`useSelectableRows`\) 
+### \(`useStickyHeader`\) 
+### \(`useToolbar`\) 
