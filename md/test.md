@@ -54,7 +54,7 @@ head: {background: blue,},
 }));
 ```
 JSX:
-```ts
+```jsx
 <CTable classes={myclasses}\>
 ```
 ### \(`conditionalCellClass`\) 
@@ -62,7 +62,7 @@ Method conditionalCellClass can be provided to highlight/modify certain specific
 Method is called when rendering table. The following parameters are passed: (icol, irow, colkey, rowcontent).\
 your method can perform some conditional checks based on parameters and can return a MUI class (if your condition is fulfilled).\
 example:
-```ts
+```jsx
 <CTable conditionalCellClass={(icol, irow, colkey, rowcontent) => {
    if (irow === 1 && icol === 0) return specialcellclass
 }} />
@@ -72,7 +72,7 @@ similar to conditionalCellClass but used to highlight/modify whole rows.
 Method is called when rendering table. The following parameters are passed: (irow).\
 your method can perform some conditional checks based on parameters and can return a MUI class (if your condition is fulfilled).\
 example:
-```ts
+```jsx
 <CTable conditionalRowClass={irow => {
 if (irow === 0) return specialrowclass
 }} />
