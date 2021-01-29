@@ -6,7 +6,7 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 | [classes](#classes) | { rows?: string;<br /> roweven?: string;<br /> rowodd?: string;<br /> head?: string;<br /> selected?: string;<br /> "@media(pointer: fine)"?: string;<br /> stickyHeader?: string;<br /> } | {} |  | object containing custom classes (made with MUIs makeStyles() hook, only that way_???_) |
 | [conditionalCellClass](#conditionalCellClass) | (icol: number,<br /> irow: number,<br /> colkey: string,<br /> colcontent: string) => string | ??? |  | Method conditionalCellClass can be provided to highlight/modify certain specific cells by providing specific class. |
 | [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ??? |  | similar to conditionalCellClass but used to highlight/modify whole rows. |
-| [data](#data) | { [key: string]: string;<br /> }[] | [] |  | data to be displayed typed as Array of Objects, each object representing a single row. |
+| [data](#data) | { [key: string]: string;<br /> }[] | ??? | ✔️ | data to be displayed typed as Array of Objects, each object representing a single row. |
 | [doColorHeadRow](#doColorHeadRow) | boolean | true |  |  |
 | [doColorRows](#doColorRows) | boolean | true |  |  |
 | [header](#header) | { id: string;<br /> numeric?: boolean;<br /> disablePadding?: boolean;<br /> label?: string;<br /> align?: Alignment;<br /> }[] | [] |  | header row data typed as Array of Objects, each object representing one column's features. |
@@ -41,7 +41,7 @@ default class's background is "#757575" if MUI theme is light otherwise (dark) i
 default class's background is determined by MUI theme: theme.palette.primary.main
 - stickyHeader: class for sticky header if [useStickyHeader](#useStickyHeader) is true, (doColorHeadRow is not active) \
 default class's background is theme.palette.background.default
-- " &#0x40; media(pointer: fine)": css-media-query for pointers(not touch devices) intended to apply custom mouse hover effect for previously provided classes (rows, roweven...), see code example below. \
+- "&#64;media(pointer: fine)": css-media-query for pointers(not touch devices) intended to apply custom mouse hover effect for previously provided classes (rows, roweven...), see code example below. \
 by default: mouse hover effect for roweven, rowodd, selected is applied. Their hover background color is "#757575" if MUI theme is light otherwise (dark) it's "#bdbdbd"
 
 example\
@@ -49,7 +49,7 @@ JS:
 ```ts
 const myclasses= makeStyles(theme => ({
 head: {background: blue,},
-" &#0x40; media(pointer: fine)": {
+" &#64; media(pointer: fine)": {
 head: {"&:hover": {background: "orange",},},
 }
 }));
@@ -78,7 +78,7 @@ example:
 if (irow === 0) return specialrowclass
 }} />
 ```
-### \(`data`\) 
+### \(`data`\)  <sub>\(`Required`\)</sub> 
 data to be displayed typed as Array of Objects, each object representing a single row.\
 Data is processed by sequence! of object propertys (not their property key!). Empty cells must be provided by property containing empty string.\
 But! Data's property keys must be same for 1 column to provide sorting functionality.\
