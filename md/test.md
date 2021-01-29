@@ -1,5 +1,5 @@
-# `<CTable />`\
-react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.\
+# `<CTable />`
+react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.
 
 | Name        | Type           | Default  | Required  |
 | ------------- |:-------------:| -----:| -----:|
