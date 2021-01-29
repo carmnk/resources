@@ -1,35 +1,35 @@
 # `<CTable />`
 react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.
 
-| Name        | Type           | Default  | Required  |
-| ------------- |:-------------:| -----:| -----:|
-| [classes](#classes) | { rows?: string;<br /> roweven?: string;<br /> rowodd?: string;<br /> head?: string;<br /> selected?: string;<br /> "@media(pointer: fine)"?: string;<br /> stickyHeader?: string;<br /> } | {} |  |
-| [conditionalCellClass](#conditionalCellClass) | (icol: number,<br /> irow: number,<br /> colkey: string,<br /> colcontent: string) => string | ??? |  |
-| [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ??? |  |
-| [data](#data) | { [key: string]: string;<br /> }[] | ??? | ✔️ |
-| [doColorHeadRow](#doColorHeadRow) | boolean | true |  |
-| [doColorRows](#doColorRows) | boolean | true |  |
-| [header](#header) | { id: string;<br /> numeric?: boolean;<br /> disablePadding?: boolean;<br /> label?: string;<br /> align?: Alignment;<br /> }[] | [] |  |
-| [preview](#preview) | number | 0 |  |
-| [size](#size) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [TableBodyProps](#TableBodyProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [TableCheckboxProps](#TableCheckboxProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [TableContainerProps](#TableContainerProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [TableHeadProps](#TableHeadProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [TablePaginationProps](#TablePaginationProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [TableProps](#TableProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [title](#title) | string | Title 1235813 |  |
-| [ToolbarProps](#ToolbarProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [ToolbarTypoProps](#ToolbarTypoProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
-| [useHeader](#useHeader) | boolean | true |  |
-| [usePagination](#usePagination) | boolean | true |  |
-| [useSelectableAllRows](#useSelectableAllRows) | boolean | true |  |
-| [useSelectableRows](#useSelectableRows) | boolean | true |  |
-| [useStickyHeader](#useStickyHeader) | boolean | true |  |
-| [useToolbar](#useToolbar) | boolean | true |  |
+| Name        | Type           | Default  | Required  | Description  |
+| ------------- |:-------------:| -----:| -----:|:-------------:| 
+| [classes](#classes) | { rows?: string;<br /> roweven?: string;<br /> rowodd?: string;<br /> head?: string;<br /> selected?: string;<br /> "@media(pointer: fine)"?: string;<br /> stickyHeader?: string;<br /> } | {} |  | object containing custom classes (made with MUIs makeStyles() hook, only that way_???_) |
+| [conditionalCellClass](#conditionalCellClass) | (icol: number,<br /> irow: number,<br /> colkey: string,<br /> colcontent: string) => string | ??? |  | Method conditionalCellClass can be provided to highlight/modify certain specific cells by providing specific class. |
+| [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ??? |  | similar to conditionalCellClass but used to highlight/modify whole rows. |
+| [data](#data) | { [key: string]: string;<br /> }[] | [] |  | data to be displayed typed as Array of Objects, each object representing a single row. |
+| [doColorHeadRow](#doColorHeadRow) | boolean | true |  |  |
+| [doColorRows](#doColorRows) | boolean | true |  |  |
+| [header](#header) | { id: string;<br /> numeric?: boolean;<br /> disablePadding?: boolean;<br /> label?: string;<br /> align?: Alignment;<br /> }[] | [] |  | header row data typed as Array of Objects, each object representing one column's features. |
+| [preview](#preview) | number | 0 |  |  |
+| [size](#size) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |  |
+| [TableBodyProps](#TableBodyProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | TableBodyProps allows you to customize table body by providing an object containing [MUI TableBody Props](https://material-ui.com/api/table-body/) |
+| [TableCheckboxProps](#TableCheckboxProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | TableCheckboxProps allows you to customize all table checkboxes by providing an object containing [MUI's Checkbox Props](https://material-ui.com/api/checkbox/) |
+| [TableContainerProps](#TableContainerProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | TableContainerProps allows you to customize table container by providing an object containing [MUI TableContainer Props](https://material-ui.com/api/table-container/) |
+| [TableHeadProps](#TableHeadProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | TableHeadProps allows you to customize table head by providing an object containing [MUI TableHead Props](https://material-ui.com/api/table-head/) |
+| [TablePaginationProps](#TablePaginationProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | TablePaginationProps allows you to customize table pagination by providing an object containing [MUI TablePagination Props](https://material-ui.com/api/table-pagination/) |
+| [TableProps](#TableProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | TableProps allows you to customize table by providing an object containing [MUI Table Props](https://material-ui.com/api/table/) |
+| [title](#title) | string | Title 1235813 |  |  |
+| [ToolbarProps](#ToolbarProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | ToolbarProps allows you to customize table toolbar by providing an object containing [MUI Toolbar Props](https://material-ui.com/api/toolbar/) |
+| [ToolbarTypoProps](#ToolbarTypoProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | ToolbarTypoProps allows you to customize table toolbar's title by providing an object containing [MUI Typography Props](https://material-ui.com/api/typography/) |
+| [useHeader](#useHeader) | boolean | true |  |  |
+| [usePagination](#usePagination) | boolean | true |  |  |
+| [useSelectableAllRows](#useSelectableAllRows) | boolean | true |  | determines whether all rows can be selected by clicking/touching the header's checkbox. |
+| [useSelectableRows](#useSelectableRows) | boolean | true |  | determines whether rows can be selected. If true an additional checkbox column is added on left side of table. |
+| [useStickyHeader](#useStickyHeader) | boolean | true |  |  |
+| [useToolbar](#useToolbar) | boolean | true |  |  |
 
 ### \(`classes`\) 
-object containing custom classes (made with MUIs makeStyles() hook, only those hook classes working?)\
+object containing custom classes (made with MUIs makeStyles() hook, only that way_???_)\
 supported classes:
 - rows: superseeds roweven and rowodd, [doColorRows](#doColorRows) must be true
 - roweven: even rows (first row is 0), [doColorRows](#doColorRows) must be true
@@ -41,16 +41,16 @@ default class's background is "#757575" if MUI theme is light otherwise (dark) i
 default class's background is determined by MUI theme: theme.palette.primary.main
 - stickyHeader: class for sticky header if [useStickyHeader](#useStickyHeader) is true, (doColorHeadRow is not active) \
 default class's background is theme.palette.background.default
-- "@media(pointer: fine)": css-media-query for pointers(not touch devices) intended to apply custom mouse hover effect for previously provided classes (rows, roweven...), see code example below. \
-  by default: mouse hover effect for roweven, rowodd, selected is applied. Their hover background color is "#757575" if MUI theme is light otherwise (dark) it's "#bdbdbd"
+- "&#0x40;media(pointer: fine)": css-media-query for pointers(not touch devices) intended to apply custom mouse hover effect for previously provided classes (rows, roweven...), see code example below. \
+by default: mouse hover effect for roweven, rowodd, selected is applied. Their hover background color is "#757575" if MUI theme is light otherwise (dark) it's "#bdbdbd"
 
 example\
 JS:
 ```ts
 const myclasses= makeStyles(theme => ({
 head: {background: blue,},
-"@media(pointer: fine)": {
-    head: {"&:hover": {background: "orange",},},
+" &#0x40; media(pointer: fine)": {
+head: {"&:hover": {background: "orange",},},
 }
 }));
 ```
@@ -65,11 +65,11 @@ your method can perform some conditional checks based on parameters and can retu
 example:
 ```jsx
 <CTable conditionalCellClass={(icol, irow, colkey, rowcontent) => {
-   if (irow === 1 && icol === 0) return specialcellclass
+if (irow === 1 && icol === 0) return specialcellclass
 }} />
 ```
 ### \(`conditionalRowClass`\) 
-similar to conditionalCellClass but used to highlight/modify whole rows.
+similar to conditionalCellClass but used to highlight/modify whole rows.\
 Method is called when rendering table. The following parameters are passed: (irow).\
 your method can perform some conditional checks based on parameters and can return a MUI class (if your condition is fulfilled).\
 example:
@@ -79,8 +79,8 @@ if (irow === 0) return specialrowclass
 }} />
 ```
 ### \(`data`\) 
-data to be displayed shapes as Array of Objects. A dataset (row) is represented by one object's propertys.\
-Data is filled by sequence! of object propertys (not their property key!). Empty cells must be provided by property containing empty string.\
+data to be displayed typed as Array of Objects, each object representing a single row.\
+Data is processed by sequence! of object propertys (not their property key!). Empty cells must be provided by property containing empty string.\
 But! Data's property keys must be same for 1 column to provide sorting functionality.\
 example:
 ```ts
@@ -92,11 +92,11 @@ determines whether header class (see [classes](#classes)) shall be applied to ta
 ### \(`doColorRows`\) 
 determines whether or not to color the table rows
 ### \(`header`\) 
-header row data of shape Array of Objects where one object represents one column's features/settings.\
+header row data typed as Array of Objects, each object representing one column's features.\
 header columns are filled by sequence! of objects within enclosing array.
-- id: relevant for sorting functionality. When clicking/touching a column header all data whose property keys correspond to id is sorted.
-- numeric: relevant for aligning columns. Columns with numeric=true are aligned on right side. Otherwise column is aligned on left side.
-- disablePadding: allows you to disable padding for certain columns
+- id: column id is required if header is provided. table data witch corresponding property keys is sorted.
+- numeric: Columns with numeric=true are aligned on right side. Otherwise column is aligned on left side.
+- disablePadding: allows you to disable padding for each column
 - label: column header label to be applied.
 ### \(`preview`\) 
 limits the amount of data (rows) displayed in the table (data is not modified/deleted, header row is not counted)
@@ -104,44 +104,53 @@ limits the amount of data (rows) displayed in the table (data is not modified/de
 table size can be modified by setting MUI's table size property. See https://material-ui.com/api/table/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableBodyProps`\) 
-table body is represented by MUI's TableBody component. TableBodyProps allows you to provide an object with MUI's TableBody Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-body/ for MUI propertys.
-@nospec MUI component propertys
+TableBodyProps allows you to customize table body by providing an object containing [MUI TableBody Props](https://material-ui.com/api/table-body/)\
+table body is composed of MUI's TableBody component. Propertys of TableBodyProps are passed to this component by rest operator.\
+See https://material-ui.com/api/table-body/ for MUI TableHead propertys.
 ### \(`TableCheckboxProps`\) 
-row checkboxes are represented by MUI's Checkbox components.\ TableCheckboxProps allows you to provide an object for all Checkboxes of the table with MUI's Checkbox Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/checkbox/ for MUI propertys.
-@nospec MUI component propertys
+TableCheckboxProps allows you to customize all table checkboxes by providing an object containing [MUI's Checkbox Props](https://material-ui.com/api/checkbox/)\
+checkboxes to select rows are composed of MUI Checkbox components. Propertys of TableCheckboxProps are passed to these components by rest operator.\
+See https://material-ui.com/api/checkbox/ for MUI Checkbox propertys.
 ### \(`TableContainerProps`\) 
-table is wrapped in MUI's TableContainer component. TableContainerProps allows you to provide an object with MUI's TableContainer Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-container/ for MUI propertys.
-@nospec MUI component propertys
+TableContainerProps allows you to customize table container by providing an object containing [MUI TableContainer Props](https://material-ui.com/api/table-container/)\
+table container is composed of MUI's TableContainer component. Propertys of TableContainerProps are passed to this component by rest operator.\
+See https://material-ui.com/api/table-container/ for MUI TableContainer propertys.
 ### \(`TableHeadProps`\) 
-table head is represented by MUI's TableHead component.\ TableHeadProps allows you to provide an object with MUI's TableHead Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-head/ for MUI propertys.
-@nospec MUI component propertys
+TableHeadProps allows you to customize table head by providing an object containing [MUI TableHead Props](https://material-ui.com/api/table-head/)\
+table head is composed of MUI's TableHead component. Propertys of TableHeadProps are passed to this component by rest operator.\
+See https://material-ui.com/api/table-head/ for MUI TableHead propertys.
 ### \(`TablePaginationProps`\) 
-table pagination is represented by MUI's TablePagination component. TablePaginationProps allows you to provide an object with MUI's TablePagination Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-pagination/ for MUI propertys.
-@nospec MUI component propertys
+TablePaginationProps allows you to customize table pagination by providing an object containing [MUI TablePagination Props](https://material-ui.com/api/table-pagination/)\
+table pagination is composed of MUI's TablePagination component. Propertys of TablePaginationProps are passed to this component by rest operator.\
+See https://material-ui.com/api/table-pagination/ for MUI TablePagination propertys.
 ### \(`TableProps`\) 
-object for external MUI Table Props\
-table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by rest operator. See https://material-ui.com/api/table/ for MUI propertys.\
-e.g.
+TableProps allows you to customize table by providing an object containing [MUI Table Props](https://material-ui.com/api/table/)\
+table is composed of MUI's Table component. Propertys of TablePaginationProps are passed to this component by rest operator.\
+See https://material-ui.com/api/table-pagination/ for MUI TablePagination propertys.
+example
 ```jsx
 <CTable TableProps={{size: "small", padding: "none"}}/>
 ```
 ### \(`title`\) 
 table title to display if [useToolbar](#useToolbar) is true
 ### \(`ToolbarProps`\) 
-table toolbar is represented by MUI's Toolbar component.\ ToolbarProps allows you to provide an object with MUI's Toolbar Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/toolbar/ for MUI propertys.
-@nospec MUI component propertys
+ToolbarProps allows you to customize table toolbar by providing an object containing [MUI Toolbar Props](https://material-ui.com/api/toolbar/)\
+table toolbar is composed of MUI's Toolbar component. Propertys of ToolbarProps are passed to this component by rest operator.\
+See https://material-ui.com/api/toolbar/ for MUI Toolbar propertys.
 ### \(`ToolbarTypoProps`\) 
-table toolbar's title is represented by a MUI Typography component.\ ToolbarTypoProps allows you to provide an object with MUI's Typography Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/typography/ for MUI propertys.
-@nospec MUI component propertys
+ToolbarTypoProps allows you to customize table toolbar's title by providing an object containing [MUI Typography Props](https://material-ui.com/api/typography/)\
+table toolbar title is composed of MUI's Typography component. Propertys of ToolbarTypoProps are passed to this component by rest operator.\
+See https://material-ui.com/api/typography/ for MUI Toolbar 9propertys.
 ### \(`useHeader`\) 
 determines whether or not to use the header row if property header is provided
 ### \(`usePagination`\) 
 determines whether or not to use pagination
 ### \(`useSelectableAllRows`\) 
-determines whether all rows can be selected by clicking/touching the header's checkbox.\\
-[useSelectableRows](#useSelectableRows) must be true. Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
+determines whether all rows can be selected by clicking/touching the header's checkbox.\
+[useSelectableRows](#useSelectableRows) must be true.\
+Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useSelectableRows`\) 
-determines whether rows can be selected. If true an additional checkbox column is added on left side of table.\\
+determines whether rows can be selected. If true an additional checkbox column is added on left side of table.\
 Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useStickyHeader`\) 
 determines whether or not header is sticky, if true doColorRows is not effective, header can only be customized with stickyHeader class or by MUI theme's default background (see [classes](#classes))
