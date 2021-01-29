@@ -78,7 +78,7 @@ example:
 if (irow === 0) return specialrowclass
 }} />
 ```
-### \(`data`\)  \(`Required`\) 
+### \(`data`\)  \[`Required`\]  \(`Required`\) \{`Required`\} \<`Required`\>
 data to be displayed typed as Array of Objects, each object representing a single row.\
 Data is processed by sequence! of object propertys (not their property key!). Empty cells must be provided by property containing empty string.\
 But! Data's property keys must be same for 1 column to provide sorting functionality.\
