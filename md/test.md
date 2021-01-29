@@ -92,7 +92,7 @@ determines whether header class (see [classes](#classes)) shall be applied to ta
 ### \(`doColorRows`\) 
 determines whether or not to color the table rows
 ### \(`header`\) 
-header row data of shape Array of Objects where one object represents one column's features/settings. \\ 
+header row data of shape Array of Objects where one object represents one column's features/settings.\ 
 header columns are filled by sequence! of objects within enclosing array.
 - id: relevant for sorting functionality. When clicking/touching a column header all data whose property keys correspond to id is sorted.
 - numeric: relevant for aligning columns. Columns with numeric=true are aligned on right side. Otherwise column is aligned on left side.
@@ -107,28 +107,31 @@ table size can be modified by setting MUI's table size property. See https://mat
 table body is represented by MUI's TableBody component. TableBodyProps allows you to provide an object with MUI's TableBody Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-body/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableCheckboxProps`\) 
-row checkboxes are represented by MUI's Checkbox components. TableCheckboxProps allows you to provide an object for all Checkboxes of the table with MUI's Checkbox Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/checkbox/ for MUI propertys.
+row checkboxes are represented by MUI's Checkbox components.\ TableCheckboxProps allows you to provide an object for all Checkboxes of the table with MUI's Checkbox Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/checkbox/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableContainerProps`\) 
 table is wrapped in MUI's TableContainer component. TableContainerProps allows you to provide an object with MUI's TableContainer Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-container/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableHeadProps`\) 
-table head is represented by MUI's TableHead component. TableHeadProps allows you to provide an object with MUI's TableHead Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-head/ for MUI propertys.
+table head is represented by MUI's TableHead component.\ TableHeadProps allows you to provide an object with MUI's TableHead Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-head/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TablePaginationProps`\) 
 table pagination is represented by MUI's TablePagination component. TablePaginationProps allows you to provide an object with MUI's TablePagination Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-pagination/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableProps`\) 
-object for external MUI \<Table\> Props\ 
-table is represented by MUI's \<Table\> component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by rest operator. See https://material-ui.com/api/table/ for MUI propertys.\
-e.g. <CTable TableProps={{size: "small", padding: "none"}}/>
+object for external MUI Table Props\ 
+table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by rest operator. See https://material-ui.com/api/table/ for MUI propertys.\
+e.g.
+```jsx
+<CTable TableProps={{size: "small", padding: "none"}}/>
+```
 ### \(`title`\) 
 table title to display if [useToolbar](#useToolbar) is true
 ### \(`ToolbarProps`\) 
-table toolbar is represented by MUI's Toolbar component. ToolbarProps allows you to provide an object with MUI's Toolbar Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/toolbar/ for MUI propertys.
+table toolbar is represented by MUI's Toolbar component.\ ToolbarProps allows you to provide an object with MUI's Toolbar Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/toolbar/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`ToolbarTypoProps`\) 
-table toolbar's title is represented by a MUI Typography component. ToolbarTypoProps allows you to provide an object with MUI's Typography Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/typography/ for MUI propertys.
+table toolbar's title is represented by a MUI Typography component.\ ToolbarTypoProps allows you to provide an object with MUI's Typography Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/typography/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`useHeader`\) 
 determines whether or not to use the header row if property header is provided
