@@ -1,5 +1,5 @@
-# `<CTable />`
-react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.
+# `<CTable />`\
+react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.\
 
 | Name        | Type           | Default  | Required  |
 | ------------- |:-------------:| -----:| -----:|
@@ -92,7 +92,7 @@ determines whether header class (see [classes](#classes)) shall be applied to ta
 ### \(`doColorRows`\) 
 determines whether or not to color the table rows
 ### \(`header`\) 
-header row data of shape Array of Objects where one object represents one column's features/settings.\ 
+header row data of shape Array of Objects where one object represents one column's features/settings.\
 header columns are filled by sequence! of objects within enclosing array.
 - id: relevant for sorting functionality. When clicking/touching a column header all data whose property keys correspond to id is sorted.
 - numeric: relevant for aligning columns. Columns with numeric=true are aligned on right side. Otherwise column is aligned on left side.
@@ -119,7 +119,7 @@ table head is represented by MUI's TableHead component.\ TableHeadProps allows y
 table pagination is represented by MUI's TablePagination component. TablePaginationProps allows you to provide an object with MUI's TablePagination Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-pagination/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableProps`\) 
-object for external MUI Table Props\ 
+object for external MUI Table Props\
 table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by rest operator. See https://material-ui.com/api/table/ for MUI propertys.\
 e.g.
 ```jsx
@@ -138,10 +138,10 @@ determines whether or not to use the header row if property header is provided
 ### \(`usePagination`\) 
 determines whether or not to use pagination
 ### \(`useSelectableAllRows`\) 
-determines whether all rows can be selected by clicking/touching the header's checkbox.\\ 
+determines whether all rows can be selected by clicking/touching the header's checkbox.\\
 [useSelectableRows](#useSelectableRows) must be true. Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useSelectableRows`\) 
-determines whether rows can be selected. If true an additional checkbox column is added on left side of table.\\ 
+determines whether rows can be selected. If true an additional checkbox column is added on left side of table.\\
 Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useStickyHeader`\) 
 determines whether or not header is sticky, if true doColorRows is not effective, header can only be customized with stickyHeader class or by MUI theme's default background (see [classes](#classes))
