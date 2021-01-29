@@ -3,13 +3,13 @@ react wrapper component for Material UI's `<Table/>` component facilitating/spec
 
 | Name        | Type           | Default  | Required  |
 | ------------- |:-------------:| -----:| -----:|
-| [classes](#classes) | { rows?: string; roweven?: string; rowodd?: string; head?: string; selected?: string; "@media(pointer: fine)"?: string; stickyHeader?: string; } | {} |  |
-| [conditionalCellClass](#conditionalCellClass) | (icol: number, irow: number, colkey: string, colcontent: string) => string | ??? |  |
+| [classes](#classes) | { rows?: string;<br /> roweven?: string;<br /> rowodd?: string;<br /> head?: string;<br /> selected?: string;<br /> "@media(pointer: fine)"?: string;<br /> stickyHeader?: string;<br /> } | {} |  |
+| [conditionalCellClass](#conditionalCellClass) | (icol: number,<br /> irow: number,<br /> colkey: string,<br /> colcontent: string) => string | ??? |  |
 | [conditionalRowClass](#conditionalRowClass) | (irow: number) => string | ??? |  |
-| [data](#data) | { [key: string]: string; }[] | ??? | ✔️ |
+| [data](#data) | { [key: string]: string;<br /> }[] | ??? | ✔️ |
 | [doColorHeadRow](#doColorHeadRow) | boolean | true |  |
 | [doColorRows](#doColorRows) | boolean | true |  |
-| [header](#header) | { id: string; numeric?: boolean; disablePadding?: boolean; label?: string; align?: Alignment; }[] | [] |  |
+| [header](#header) | { id: string;<br /> numeric?: boolean;<br /> disablePadding?: boolean;<br /> label?: string;<br /> align?: Alignment;<br /> }[] | [] |  |
 | [preview](#preview) | number | 0 |  |
 | [size](#size) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
 | [TableBodyProps](#TableBodyProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  |
@@ -93,7 +93,7 @@ determines whether header class (see [classes](#classes)) shall be applied to ta
 determines whether or not to color the table rows
 ### \(`header`\) 
 header row data of shape Array of Objects where one object represents one column's features/settings. \
-header columns are filled by sequence! of objects within enclosing array.
+\header columns are filled by sequence! of objects within enclosing array.
 - id: relevant for sorting functionality. When clicking/touching a column header all data whose property keys correspond to id is sorted.
 - numeric: relevant for aligning columns. Columns with numeric=true are aligned on right side. Otherwise column is aligned on left side.
 - disablePadding: allows you to disable padding for certain columns
@@ -119,7 +119,8 @@ table head is represented by MUI's TableHead component. TableHeadProps allows yo
 table pagination is represented by MUI's TablePagination component. TablePaginationProps allows you to provide an object with MUI's TablePagination Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table-pagination/ for MUI propertys.
 @nospec MUI component propertys
 ### \(`TableProps`\) 
-table is represented by MUI's Table component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by Rest/Spread? operator. See https://material-ui.com/api/table/ for MUI propertys.\
+object for external MUI \<Table\> Props
+\table is represented by MUI's \<Table\> component. TableProps allows you to provide an object with MUI's Table Props which are directly forwareded by rest operator. See https://material-ui.com/api/table/ for MUI propertys.\
 e.g. <CTable TableProps={{size: "small", padding: "none"}}/>
 ### \(`title`\) 
 table title to display if [useToolbar](#useToolbar) is true
@@ -135,10 +136,10 @@ determines whether or not to use the header row if property header is provided
 determines whether or not to use pagination
 ### \(`useSelectableAllRows`\) 
 determines whether all rows can be selected by clicking/touching the header's checkbox.\
-[useSelectableRows](#useSelectableRows) must be true. Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
+\[useSelectableRows](#useSelectableRows) must be true. Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useSelectableRows`\) 
 determines whether rows can be selected. If true an additional checkbox column is added on left side of table.\
-Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
+\Checkboxes can be customized by using [TableCheckboxProps](#TableCheckboxProps).
 ### \(`useStickyHeader`\) 
 determines whether or not header is sticky, if true doColorRows is not effective, header can only be customized with stickyHeader class or by MUI theme's default background (see [classes](#classes))
 ### \(`useToolbar`\) 
