@@ -41,7 +41,7 @@ default class's background is "#757575" if MUI theme is light otherwise (dark) i
 default class's background is determined by MUI theme: theme.palette.primary.main
 - stickyHeader: class for sticky header if [useStickyHeader](#useStickyHeader) is true, (doColorHeadRow is not active) \
 default class's background is theme.palette.background.default
-- "&#64;media(pointer: fine)": css-media-query for pointers(not touch devices) intended to apply custom mouse hover effect for previously provided classes (rows, roweven...), see code example below. \
+- "@media(pointer: fine)": css-media-query for pointers(not touch devices) intended to apply custom mouse hover effect for previously provided classes (rows, roweven...), see code example below. \
 by default: mouse hover effect for roweven, rowodd, selected is applied. Their hover background color is "#757575" if MUI theme is light otherwise (dark) it's "#bdbdbd"
 
 example\
@@ -49,7 +49,7 @@ JS:
 ```ts
 const myclasses= makeStyles(theme => ({
 head: {background: blue,},
-" &#64; media(pointer: fine)": {
+"@media(pointer: fine)": {
 head: {"&:hover": {background: "orange",},},
 }
 }));
