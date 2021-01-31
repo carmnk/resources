@@ -2,14 +2,14 @@
 react wrapper component for Material UI's `<Table/>` component facilitating/specifying usage and extending functionality.
 
 | Name        | Type           | Default  | Required  | Description  |
-| ------------- |:-------------| :-----:| :-----:|:-------------:| 
-| [classes](#classes) | {rows?:string;<br />roweven?:string;<br />rowodd?:string;<br />head?:string;<br />selected?:string;<br />"@media(pointer:fine)"?:string;<br />stickyHeader?:string;} | {} |  | object containing custom classes (made with MUIs makeStyles() hook, only that way_???_) |
-| [conditionalCellClass](#conditionalCellClass) | (icol: number, irow: number, colkey: string, colcontent: string) => string |  |  | Method conditionalCellClass can be provided to highlight/modify certain specific cells by providing specific class. |
-| [conditionalRowClass](#conditionalRowClass) | (irow: number) => string |  |  | similar to conditionalCellClass but used to highlight/modify whole rows. |
+| :------------- |:-------------| :-----:| :-----:|:-------------:| 
+| [classes](#classes) | {rows?:string;<br/>roweven?:string;<br/>rowodd?:string;<br/>head?:string;<br/>selected?:string;<br/>"@media(pointer:fine)"?:string;<br/>stickyHeader?:string;} | {} |  | object containing custom classes (made with MUIs makeStyles() hook, only that way_???_) |
+| [conditionalCellClass](#conditionalCellClass) | (icol:number,<br/>irow:number,<br/>colkey:string,<br/>colcontent:string)=>string |  |  | Method conditionalCellClass can be provided to highlight/modify certain specific cells by providing specific class. |
+| [conditionalRowClass](#conditionalRowClass) | (irow:number)=>string |  |  | similar to conditionalCellClass but used to highlight/modify whole rows. |
 | [data](#data) | {[key:string]:string;}[] |  | ✔️ | data to be displayed typed as Array of Objects, each object representing a single row. |
 | [doColorHeadRow](#doColorHeadRow) | boolean | true |  | determines whether header class (see [classes](#classes)) shall be applied to table header, |
 | [doColorRows](#doColorRows) | boolean | true |  | determines whether or not to color the table rows |
-| [header](#header) | {id:string;<br />numeric?:boolean;<br />disablePadding?:boolean;<br />label?:string;<br />align?:Alignment;}[] | [] |  | header row data typed as Array of Objects, each object representing one column's features. |
+| [header](#header) | {id:string;<br/>numeric?:boolean;<br/>disablePadding?:boolean;<br/>label?:string;<br/>align?:Alignment;}[] | [] |  | header row data typed as Array of Objects, each object representing one column's features. |
 | [preview](#preview) | number | 0 |  | limits the amount of data (rows) displayed in the table (data is not modified/deleted, header row is not counted) |
 | [size](#size) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | table size can be modified by setting [MUI's table size property](#https://material-ui.com/api/table/). |
 | [TableBodyProps](#TableBodyProps) | ```TODO 🚧``` | ```TODO 🚧 ``` |  | TableBodyProps allows you to customize table body by providing an object containing [MUI TableBody Props](https://material-ui.com/api/table-body/) |
