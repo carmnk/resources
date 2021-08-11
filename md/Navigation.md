@@ -50,6 +50,8 @@ export const App = () => {
 ### navItem Props
 
 each navigation item in the navItem array supports the following props:
+
+
 | Name | Type | Default | Description |
 | --------- | --------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | children | unsupportedProp | | This prop isn't supported. Use the `component` prop if you need to change the children structure. |
