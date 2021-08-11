@@ -6,9 +6,9 @@ Navigation components help users to navigate to the content of interest within t
 
 A bottom navigation is an icon-button-based navigation bar fixed at the bottom of a page. It offers a comfortable way of navigating on mobile touch devices since the distance to reach for is shorter. Disadvantageous is the permanent reduction of available viewport height for content. Also regarding desktop devices or devices with wider viewports in general the bottom navigation is less commonly used. Most bottom navs span the whole width of the viewport which is even worse on desktop devices. One could limit the bottom nav's width but that would result in a notch which is also controversial. Another reason might be that users with mouse device tend to focus screens differently.
 
-By default the vertical scrollbar will span the whole viewport height. In order to limit the scrollbar height to the content viewport (without footer) the content has to be wrapped in a `display="fixed"` Box component with `height="calc(100 - footerHeight)` `and width="100%"`.
+By default the vertical scrollbar will span the whole viewport height. In order to limit the scrollbar height to the content viewport (without footer) the content has to be wrapped in a ```display="fixed"``` Box component with `height="calc(100 - footerHeight)` `and width="100%"`.
 
-The proposed `<BottomNav/>` component is based on Material UI's `<BottomNavigation/>` and `<BottomNavigationAction/>` components. The `<BottomNav/>` component is a simple wrapper for `<BottomNavigation/>` component. By default it sets `showLabels` to true and comes with internal state demonstrate the functionality. In order to process the clicked navigation requests properly the `value` and `onChange` propertys have to be used and some sort of state control has to be implemented in the parent component. But in contrast to the underlying material ui component the items are provided as array of BottomNavigationActionProps (Array of objects, each containing props for the underlying `<BottomNavigationAction/>` component).
+The proposed `<BottomNav/>` component is based on Material UI's `<BottomNavigation/>` and `<BottomNavigationAction/>` components. The `<BottomNav/>` component is a simple wrapper for `<BottomNavigation/>` component. By default it sets `showLabels` to true and comes with internal state control for the active navigation item to demonstrate/prototype the functionality. In order to process the clicked navigation requests properly the `value` and `onChange` propertys have to be used and some sort of state control has to be implemented in the parent component. But in contrast to the underlying material ui component the items are provided as array of BottomNavigationActionProps (Array of objects, each containing props for the underlying `<BottomNavigationAction/>` component).
 
 ### Implementation
 
@@ -60,8 +60,8 @@ each navigation item in the navItem array supports the following props:
 | sx | object | | The system prop that allows defining system overrides as well as additional CSS styles. See the [\`sx\` page](https://next.material-ui.com/system/the-sx-prop/) for more details. |
 | value | any | | You can provide your own value. Otherwise, we fallback to the child position index. |
 
-## App Bar
 
+## App Bar
 App bars are very flexible menu bars most oftenly placed on top of a website. App bars are widely used on many websites and apps as navigation menu. Almost all app bars tend to display a title and a "Menu" IconButton (the hamburger) to open additional navigation elements. Other elements like (Icon-)Buttons and Search Fields can be added and placed as desired.  
 The proposed CAppBar component is therfore a simple container based on material ui's `<Paper/>` component coming with styles for elevation (shadow depth). The underlying HTML container is a semantic `<header/>` element with a default `position: "fixed"`, `width: "100%"` (always same position, span full width), and `bgcolor: "primary.main"`, `color: "primary.contrastText"` (use material ui theme colors). The Appbar can be sized can chosen freely and be sized and styled as desired.
 
@@ -184,3 +184,18 @@ export const App = () => {
 | SwipeAreaProps            | object                                                         |                                                                                  | The element is used to intercept the touch events on the edge.                                                                                                    |
 | swipeAreaWidth            | number                                                         | 20                                                                               | The width of the left most (or right most) area in `px` that the drawer can be swiped open from.                                                                  |
 | transitionDuration        | number<br>| { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }                 | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object.                           |
+
+
+## Breadcrumbs 
+
+## Link 
+
+## Menu 
+
+## Stepper 
+
+## Tabs 
+
+## Speed dial 
+
+## Pagination
