@@ -12,7 +12,7 @@ The proposed `<BottomNav/>` component is based on Material UI's `<BottomNavigati
 
 TEST abcdefghijklmnopqrstuvwxyz
 https://stackoverflow.com/ https://stackoverflow.com/
-TEST2 abcdefghijklmnopqrstuvwxyz
+TEST2 ~~abcdefghijklmnopqrstuvwxyz~~ __1234567890 *Hi Ho* Bla Bla__ blub
 
 TEST3 abcdefghijklmnopqrstuvwxyz
 [SomLinkyLink](https://stackoverflow.com/) [SomLinkyLink](https://stackoverflow.com/) https://stackoverflow.com/
