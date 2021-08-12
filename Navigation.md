@@ -11,12 +11,16 @@ By default the vertical scrollbar will span the whole viewport height. In order 
 The proposed `<BottomNav/>` component is based on Material UI's `<BottomNavigation/>` and `<BottomNavigationAction/>` components. The `<BottomNav/>` component is a simple wrapper for `<BottomNavigation/>` component. By default it sets `showLabels` to true and comes with internal state control for the active navigation item to demonstrate/prototype the functionality. In order to process the clicked navigation requests properly the `value` and `onChange` propertys have to be used and some sort of state control has to be implemented in the parent component. But in contrast to the underlying material ui component the items are provided as array of BottomNavigationActionProps (Array of objects, each containing props for the underlying `<BottomNavigationAction/>` component).
 
 TEST abcdefghijklmnopqrstuvwxyz
-https://stackoverflow.com/
-TEST abcdefghijklmnopqrstuvwxyz
+https://stackoverflow.com/ https://stackoverflow.com/
+TEST2 abcdefghijklmnopqrstuvwxyz
 
-TEST abcdefghijklmnopqrstuvwxyz
-[SomLinkyLink](https://stackoverflow.com/)
-TEST abcdefghijklmnopqrstuvwxyz
+TEST3 abcdefghijklmnopqrstuvwxyz
+[SomLinkyLink](https://stackoverflow.com/) [SomLinkyLink](https://stackoverflow.com/) https://stackoverflow.com/
+TEST4 abcdefghijklmnopqrstuvwxyz
+
+TEST5 abcdefghijklmnopqrstuvwxyz
+[SomLinkyLink](https://stackoverflow.com/) Test5a abcdefghijklmnopqrstuvwxyz  [SomLinkyLink](https://stackoverflow.com/) Test5a abcdefghijklmnopqrstuvwxyz https://stackoverflow.com/
+TEST6 abcdefghijklmnopqrstuvwxyz
 
 ### Implementation
 
@@ -163,25 +167,25 @@ export const App = () => {
 ### Props Drawer
 
 | Name               | Type                                  | Default                                             | Description                                                                                                                                                                       |
-| ------------------ | ------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------ | ------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | anchor             | bottom', 'left', 'right', 'top'       | 'left'                                              | Side from which the drawer will appear.                                                                                                                                           |
 | children           | node                                  |                                                     | The content of the component.                                                                                                                                                     |
-| classes            | object                                |                                                     | [Override or extend the styles applied to the component. See CSS API below for more details.](https://next.material-ui.com/api/drawer/#css)                                       |
+| classes            | object                                |                                                     | [Override or extend the styles applied to the component. See CSS API below for more details.](https://next.material-ui.com/api/drawer/#css)                                       |
 | elevation          | integer                               | 16                                                  | The elevation of the drawer.                                                                                                                                                      |
-| hideBackdrop       | bool                                  | FALSE                                               | If true, the backdrop is not rendered.                                                                                                                                            |
-| ModalProps         | object                                | {}                                                  | [Props applied to the Modal element.](https://next.material-ui.com/api/modal/)                                                                                                    |
-| onClose            | func                                  |                                                     | Callback fired when the component requests to be closed.<br>Signature:<br>function(event: object) => void<br>event: The event source of the callback.                             |
-| open               | bool                                  | FALSE                                               | If true, the component is shown.                                                                                                                                                  |
-| PaperProps         | object                                | {}                                                  | [Props applied to the Paper element.](https://next.material-ui.com/api/paper/)                                                                                                    |
-| SlideProps         | object                                |                                                     | [Props applied to the Slide element.](https://next.material-ui.com/api/slide/)                                                                                                    |
-| sx                 | object                                |                                                     | [The system prop that allows defining system overrides as well as additional CSS styles. See the \`sx\` page for more details.](https://next.material-ui.com/system/the-sx-prop/) |
-| transitionDuration | number<br>                            |  { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }                                                                                                                  | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
-| variant            | permanent', 'persistent', 'temporary' | 'temporary'                                         | The variant to use.                                                                                                                                                               |
+| hideBackdrop       | bool                                  | FALSE                                               | If true, the backdrop is not rendered.                                                                                                                                            |
+| ModalProps         | object                                | {}                                                  | [Props applied to the Modal element.](https://next.material-ui.com/api/modal/)                                                                                                    |
+| onClose            | func                                  |                                                     | Callback fired when the component requests to be closed.<br>Signature:<br>function(event: object) => void<br>event: The event source of the callback.                             |
+| open               | bool                                  | FALSE                                               | If true, the component is shown.                                                                                                                                                  |
+| PaperProps         | object                                | {}                                                  | [Props applied to the Paper element.](https://next.material-ui.com/api/paper/)                                                                                                    |
+| SlideProps         | object                                |                                                     | [Props applied to the Slide element.](https://next.material-ui.com/api/slide/)                                                                                                    |
+| sx                 | object                                |                                                     | [The system prop that allows defining system overrides as well as additional CSS styles. See the \`sx\` page for more details.](https://next.material-ui.com/system/the-sx-prop/) |
+| transitionDuration | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }| The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
+| variant            | permanent', 'persistent', 'temporary' | 'temporary'                                         | The variant to use.                                                                                                                                                               |                                                                                                                                                           |
 
 ### Props SwipeableDrawer
 
 | Name                      | Type       | Default                                             | Description                                                                                                                                                   |
-| ------------------------- | ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------- | ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | onClose<sup>\*</sup>      | func       |                                                     | Callback fired when the component requests to be closed.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
 | onOpen<sup>\*</sup>       | func       |                                                     | Callback fired when the component requests to be opened.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
 | open<sup>\*</sup>         | bool       | false                                               | If `true`, the component is shown.                                                                                                                            |
@@ -193,7 +197,7 @@ export const App = () => {
 | minFlingVelocity          | number     | 450                                                 | Defines, from which (average) velocity on, the swipe is defined as complete although hysteresis isn't reached. Good threshold is between 250 - 1000 px/s      |
 | SwipeAreaProps            | object     |                                                     | The element is used to intercept the touch events on the edge.                                                                                                |
 | swipeAreaWidth            | number     | 20                                                  | The width of the left most (or right most) area in `px` that the drawer can be swiped open from.                                                              |
-| transitionDuration        | number<br> |  { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }                                                                                              | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
+| transitionDuration        | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }| The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
 
 ## Breadcrumbs
 
