@@ -185,7 +185,7 @@ export const App = () => {
 ### Props SwipeableDrawer
 
 | Name                      | Type       | Default                                             | Description                                                                                                                                                   |
-| ------------------------- | ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------- | ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | onClose<sup>\*</sup>      | func       |                                                     | Callback fired when the component requests to be closed.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
 | onOpen<sup>\*</sup>       | func       |                                                     | Callback fired when the component requests to be opened.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
 | open<sup>\*</sup>         | bool       | false                                               | If `true`, the component is shown.                                                                                                                            |
@@ -197,7 +197,7 @@ export const App = () => {
 | minFlingVelocity          | number     | 450                                                 | Defines, from which (average) velocity on, the swipe is defined as complete although hysteresis isn't reached. Good threshold is between 250 - 1000 px/s      |
 | SwipeAreaProps            | object     |                                                     | The element is used to intercept the touch events on the edge.                                                                                                |
 | swipeAreaWidth            | number     | 20                                                  | The width of the left most (or right most) area in `px` that the drawer can be swiped open from.                                                              |
-| transitionDuration        | number<br> |  { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }                                                                                              | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
+| transitionDuration        | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }| The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
 
 ## Breadcrumbs
 
