@@ -11,12 +11,16 @@ By default the vertical scrollbar will span the whole viewport height. In order 
 The proposed `<BottomNav/>` component is based on Material UI's `<BottomNavigation/>` and `<BottomNavigationAction/>` components. The `<BottomNav/>` component is a simple wrapper for `<BottomNavigation/>` component. By default it sets `showLabels` to true and comes with internal state control for the active navigation item to demonstrate/prototype the functionality. In order to process the clicked navigation requests properly the `value` and `onChange` propertys have to be used and some sort of state control has to be implemented in the parent component. But in contrast to the underlying material ui component the items are provided as array of BottomNavigationActionProps (Array of objects, each containing props for the underlying `<BottomNavigationAction/>` component).
 
 TEST abcdefghijklmnopqrstuvwxyz
-https://stackoverflow.com/
-TEST abcdefghijklmnopqrstuvwxyz
+https://stackoverflow.com/ https://stackoverflow.com/
+TEST2 abcdefghijklmnopqrstuvwxyz
 
-TEST abcdefghijklmnopqrstuvwxyz
-[SomLinkyLink](https://stackoverflow.com/)
-TEST abcdefghijklmnopqrstuvwxyz
+TEST3 abcdefghijklmnopqrstuvwxyz
+[SomLinkyLink](https://stackoverflow.com/) [SomLinkyLink](https://stackoverflow.com/) https://stackoverflow.com/
+TEST4 abcdefghijklmnopqrstuvwxyz
+
+TEST5 abcdefghijklmnopqrstuvwxyz
+[SomLinkyLink](https://stackoverflow.com/) Test5a abcdefghijklmnopqrstuvwxyz  [SomLinkyLink](https://stackoverflow.com/) Test5a abcdefghijklmnopqrstuvwxyz https://stackoverflow.com/
+TEST6 abcdefghijklmnopqrstuvwxyz
 
 ### Implementation
 
