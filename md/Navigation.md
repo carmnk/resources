@@ -19,8 +19,8 @@ TEST3 abcdefghijklmnopqrstuvwxyz
 TEST4 abcdefghijklmnopqrstuvwxyz
 
 TEST5 abcdefghijklmnopqrstuvwxyz
-[SomLinkyLink](https://stackoverflow.com/) Test5a abcdefghijklmnopqrstuvwxyz  [SomLinkyLink](https://stackoverflow.com/) Test5a abcdefghijklmnopqrstuvwxyz https://stackoverflow.com/
-TEST6 abcdefghijklmnopqrstuvwxyz
+[SomLinkyLink](https://stackoverflow.com/) Test5a *abcdefghijklmnopqrstuvwxyz*  [SomLinkyLink](https://stackoverflow.com/) Test5a _abcdefghijklmnopqrstuvwxyz_ https://stackoverflow.com/
+TEST6 **abcdefghijklmnopqrstuvwxyz** __hello__ world 1234567890
 
 ### Implementation
 
