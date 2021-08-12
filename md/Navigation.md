@@ -22,6 +22,11 @@ TEST5 abcdefghijklmnopqrstuvwxyz
 [SomLinkyLink](https://stackoverflow.com/) Test5a *abcdefghijklmnopqrstuvwxyz*  [SomLinkyLink](https://stackoverflow.com/) Test5a _abcdefghijklmnopqrstuvwxyz_ https://stackoverflow.com/
 TEST6 **abcdefghijklmnopqrstuvwxyz** __hello__ world 1234567890
 
+Smiley world ?! 
+:smiling_face_with_three_hearts: :grinning:
+:rofl:
+:innocent:
+
 ### Implementation
 
 ```javascript
