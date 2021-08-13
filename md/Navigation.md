@@ -12,23 +12,23 @@ The proposed `<BottomNav/>` component is based on Material UI's `<BottomNavigati
 
 TEST abcdefghijklmnopqrstuvwxyz
 https://stackoverflow.com/ https://stackoverflow.com/
-TEST2 ~~abcdefghijklmnopqrstuvwxyz~~ __1234567890 *Hi Ho* Bla Bla__ blub
+TEST2 ~~abcdefghijklmnopqrstuvwxyz~~ **1234567890 _Hi Ho_ Bla Bla** blub
 
 TEST3 abcdefghijklmnopqrstuvwxyz
 [SomLinkyLink](https://stackoverflow.com/) [SomLinkyLink](https://stackoverflow.com/) https://stackoverflow.com/
 TEST4 abcdefghijklmnopqrstuvwxyz
 
 TEST5 abcdefghijklmnopqrstuvwxyz
-[SomLinkyLink](https://stackoverflow.com/) Test5a *abcdefghijklmnopqrstuvwxyz*  [SomLinkyLink](https://stackoverflow.com/) Test5a _abcdefghijklmnopqrstuvwxyz_ https://stackoverflow.com/
-TEST6 **abcdefghijklmnopqrstuvwxyz** __hello__ world 1234567890
+[SomLinkyLink](https://stackoverflow.com/) Test5a _abcdefghijklmnopqrstuvwxyz_ [SomLinkyLink](https://stackoverflow.com/) Test5a _abcdefghijklmnopqrstuvwxyz_ https://stackoverflow.com/
+TEST6 **abcdefghijklmnopqrstuvwxyz** **hello** world 1234567890
 
-Smiley world ?! 
+Smiley world ?!
 :smiling_face_with_three_hearts: :grinning:
 :rofl:
 :innocent:
 
-
 Blockquotes
+
 > We're living the future so
 > the present is our past.
 
@@ -37,22 +37,27 @@ Blockquotes
 1. Item 3
    1. Item 3a
    1. Item 3b
+      1. Item 3bA
+      1. Item 3bB
 
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
+- Item 1
+- Item 2
 
-* Item 1
-* Item 2
+  - Item 2a
+  - Item 2b
+
+- Item 1
+- Item 2
   1. Item 2a
   2. Item 2b
-  
+
 1. Item 1
 1. Item 2
 1. Item 3
-   * Item 3a
-   * Item 3b
+   - Item 3a
+   - Item 3b
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 ### Implementation
 
@@ -198,38 +203,38 @@ export const App = () => {
 
 ### Props Drawer
 
-| Name               | Type                                  | Default                                             | Description                                                                                                                                                                       |
-| ------------------ | ------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| anchor             | bottom', 'left', 'right', 'top'       | 'left'                                              | Side from which the drawer will appear.                                                                                                                                           |
-| children           | node                                  |                                                     | The content of the component.                                                                                                                                                     |
-| classes            | object                                |                                                     | [Override or extend the styles applied to the component. See CSS API below for more details.](https://next.material-ui.com/api/drawer/#css)                                       |
-| elevation          | integer                               | 16                                                  | The elevation of the drawer.                                                                                                                                                      |
-| hideBackdrop       | bool                                  | FALSE                                               | If true, the backdrop is not rendered.                                                                                                                                            |
-| ModalProps         | object                                | {}                                                  | [Props applied to the Modal element.](https://next.material-ui.com/api/modal/)                                                                                                    |
-| onClose            | func                                  |                                                     | Callback fired when the component requests to be closed.<br>Signature:<br>function(event: object) => void<br>event: The event source of the callback.                             |
-| open               | bool                                  | FALSE                                               | If true, the component is shown.                                                                                                                                                  |
-| PaperProps         | object                                | {}                                                  | [Props applied to the Paper element.](https://next.material-ui.com/api/paper/)                                                                                                    |
-| SlideProps         | object                                |                                                     | [Props applied to the Slide element.](https://next.material-ui.com/api/slide/)                                                                                                    |
-| sx                 | object                                |                                                     | [The system prop that allows defining system overrides as well as additional CSS styles. See the \`sx\` page for more details.](https://next.material-ui.com/system/the-sx-prop/) |
-| transitionDuration | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }| The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
-| variant            | permanent', 'persistent', 'temporary' | 'temporary'                                         | The variant to use.                                                                                                                                                               |                                                                                                                                                           |
+| Name               | Type                                                       | Default                                                          | Description                                                                                                                                                                       |
+| ------------------ | ---------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| anchor             | bottom', 'left', 'right', 'top'                            | 'left'                                                           | Side from which the drawer will appear.                                                                                                                                           |
+| children           | node                                                       |                                                                  | The content of the component.                                                                                                                                                     |
+| classes            | object                                                     |                                                                  | [Override or extend the styles applied to the component. See CSS API below for more details.](https://next.material-ui.com/api/drawer/#css)                                       |
+| elevation          | integer                                                    | 16                                                               | The elevation of the drawer.                                                                                                                                                      |
+| hideBackdrop       | bool                                                       | FALSE                                                            | If true, the backdrop is not rendered.                                                                                                                                            |
+| ModalProps         | object                                                     | {}                                                               | [Props applied to the Modal element.](https://next.material-ui.com/api/modal/)                                                                                                    |
+| onClose            | func                                                       |                                                                  | Callback fired when the component requests to be closed.<br>Signature:<br>function(event: object) => void<br>event: The event source of the callback.                             |
+| open               | bool                                                       | FALSE                                                            | If true, the component is shown.                                                                                                                                                  |
+| PaperProps         | object                                                     | {}                                                               | [Props applied to the Paper element.](https://next.material-ui.com/api/paper/)                                                                                                    |
+| SlideProps         | object                                                     |                                                                  | [Props applied to the Slide element.](https://next.material-ui.com/api/slide/)                                                                                                    |
+| sx                 | object                                                     |                                                                  | [The system prop that allows defining system overrides as well as additional CSS styles. See the \`sx\` page for more details.](https://next.material-ui.com/system/the-sx-prop/) |
+| transitionDuration | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen } | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object.                                           |
+| variant            | permanent', 'persistent', 'temporary'                      | 'temporary'                                                      | The variant to use.                                                                                                                                                               |     |
 
 ### Props SwipeableDrawer
 
-| Name                      | Type       | Default                                             | Description                                                                                                                                                   |
-| ------------------------- | ---------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| onClose<sup>\*</sup>      | func       |                                                     | Callback fired when the component requests to be closed.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
-| onOpen<sup>\*</sup>       | func       |                                                     | Callback fired when the component requests to be opened.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
-| open<sup>\*</sup>         | bool       | false                                               | If `true`, the component is shown.                                                                                                                            |
-| children                  | node       |                                                     | The content of the component.                                                                                                                                 |
-| disableBackdropTransition | bool       | false                                               | Disable the backdrop transition. This can improve the FPS on low-end devices.                                                                                 |
-| disableDiscovery          | bool       | false                                               | If `true`, touching the screen near the edge of the drawer will not slide in the drawer a bit to promote accidental discovery of the swipe gesture.           |
-| disableSwipeToOpen        | bool       | true                                                | If `true`, swipe to open is disabled. This is useful in browsers where swiping triggers navigation actions                                                    |
-| hysteresis                | number     | 0.52                                                | Affects how far the drawer must be opened/closed to change its state. Specified as percent (0-1) of the width of the drawer                                   |
-| minFlingVelocity          | number     | 450                                                 | Defines, from which (average) velocity on, the swipe is defined as complete although hysteresis isn't reached. Good threshold is between 250 - 1000 px/s      |
-| SwipeAreaProps            | object     |                                                     | The element is used to intercept the touch events on the edge.                                                                                                |
-| swipeAreaWidth            | number     | 20                                                  | The width of the left most (or right most) area in `px` that the drawer can be swiped open from.                                                              |
-| transitionDuration        | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen }| The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object. |
+| Name                      | Type                                                       | Default                                                          | Description                                                                                                                                                   |
+| ------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| onClose<sup>\*</sup>      | func                                                       |                                                                  | Callback fired when the component requests to be closed.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
+| onOpen<sup>\*</sup>       | func                                                       |                                                                  | Callback fired when the component requests to be opened.<br><br>Signature:<br>`function(event: object) => void`<br>*event:* The event source of the callback. |
+| open<sup>\*</sup>         | bool                                                       | false                                                            | If `true`, the component is shown.                                                                                                                            |
+| children                  | node                                                       |                                                                  | The content of the component.                                                                                                                                 |
+| disableBackdropTransition | bool                                                       | false                                                            | Disable the backdrop transition. This can improve the FPS on low-end devices.                                                                                 |
+| disableDiscovery          | bool                                                       | false                                                            | If `true`, touching the screen near the edge of the drawer will not slide in the drawer a bit to promote accidental discovery of the swipe gesture.           |
+| disableSwipeToOpen        | bool                                                       | true                                                             | If `true`, swipe to open is disabled. This is useful in browsers where swiping triggers navigation actions                                                    |
+| hysteresis                | number                                                     | 0.52                                                             | Affects how far the drawer must be opened/closed to change its state. Specified as percent (0-1) of the width of the drawer                                   |
+| minFlingVelocity          | number                                                     | 450                                                              | Defines, from which (average) velocity on, the swipe is defined as complete although hysteresis isn't reached. Good threshold is between 250 - 1000 px/s      |
+| SwipeAreaProps            | object                                                     |                                                                  | The element is used to intercept the touch events on the edge.                                                                                                |
+| swipeAreaWidth            | number                                                     | 20                                                               | The width of the left most (or right most) area in `px` that the drawer can be swiped open from.                                                              |
+| transitionDuration        | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen } | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object.                       |
 
 ## Breadcrumbs
 
