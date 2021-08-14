@@ -32,9 +32,9 @@ Blockquotes
 > We're living the future so
 > the present is our past.
 
-1. Item 1
-1. Item 2
-1. Item 3
+1. __Item 1__
+1. *Item 2*
+1. __Item 3__
    1. *Item 3a*
    1. __Item 3b__
       1. Item 3bA
@@ -169,7 +169,9 @@ export const App = () => {
 ## Drawer
 
 Drawers are static side sheets or dynamic overlays. They are usually complementary to other navigation elements like app bars. Many websites use drawers for menu navigation. It is also very popular as table of content for mobile devices. The static variant - due to permanent reduction of available viewport for content - should be prefered for devices with medium to big screens (> tablet). Dynamic drawers can partly cover the screen starting from any viewport edge (left, right, top, bottom) or they can overlay the whole screen. The content of a drawer can be designed freely. Most drawers contain some sort of clickable list with navigation targets, often visually emphasized with icons.
+
 Material UI's `<Drawer/>` resp. `<SwipableDrawer/>` component provides a quick way to implement a drawer. Since both are using a portal the components can be placed anywhere in any parent (layout) component (JSX element). The drawer are served with build-in animations, elevations (shadows) and comes with a backdrop, causing the screen to dim and adding a close-on-click-away behavior. If the drawer does not need to be swipable the default `<Swiper/>` component should be used to reduce the package size (swipable drawer has 2kB gzipped overload). The `<SwipableDrawer/>` component adds customizable touch gestures to open and close the drawer which are exclusively working on touch devices, which is disadvantageos. The open gestures - swiping from edge to center often collides with native? or browser-default behavior (history back, history forwand in browser) on mobile devices. As far as I know there is no good to solution to this issues in browsers. Or is there? But things look differently in a native environment - I haven't fully covered this yet but seems possible.
+
 Therefore a custom `<CDrawer/>` is introduced. It will either use the `<Swiper/>` or `<SwipableDrawer/>` component depending on whether or not `useSwipeableDrawer` property is provided. Another difference is `disableSwipeToOpen` is not only dsiabled on IOS devices (material ui default) but on all devices since it is often not working as intended (collides with browser/native gestures). `open`, `onOpen`, `onClose` are required compomnent propertys.
 
 ### Implementation
