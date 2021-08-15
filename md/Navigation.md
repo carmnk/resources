@@ -120,7 +120,9 @@ each navigation item in the navItem array supports the following props:
 
 [](Comment text goes here)
 
-<!-- This is commented out. -->
+<!-- expandable -->
+<!-- collapsedLabel Show Props -->
+<!-- expandedLabel Hide Props -->
 
 ## App Bar
 
