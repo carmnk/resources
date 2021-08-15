@@ -118,6 +118,8 @@ each navigation item in the navItem array supports the following props:
 
 [//]: # (This may be the most platform independent comment)
 
+[](Comment text goes here)
+
 ## App Bar
 
 App bars are very flexible menu bars most oftenly placed on top of a website. App bars are widely used on many websites and apps as navigation menu. Almost all app bars tend to display a title and a "Menu" IconButton (the hamburger) to open additional navigation elements. Other elements like (Icon-)Buttons and Search Fields can be added and placed as desired.  
