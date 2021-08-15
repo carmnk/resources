@@ -113,7 +113,8 @@ each navigation item in the navItem array supports the following props:
 | value     | any             |         | You can provide your own value. Otherwise, we fallback to the child position index.                                                                                               |
 - #TABLEPROPS#
 - expandable 
-- isExpanded 
+- collapsedLabel Show Props
+- expandedLabel Hide Props
 
 ## App Bar
 
