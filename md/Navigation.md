@@ -111,6 +111,8 @@ each navigation item in the navItem array supports the following props:
 | showLabel | bool            | true    | If `true`, all BottomNav items will show its label. If `false` only the active item will show its label.                                                                          |
 | sx        | object          |         | The system prop that allows defining system overrides as well as additional CSS styles. See the [\`sx\` page](https://next.material-ui.com/system/the-sx-prop/) for more details. |
 | value     | any             |         | You can provide your own value. Otherwise, we fallback to the child position index.                                                                                               |
+- expandable 
+- isExpanded 
 
 ## App Bar
 
