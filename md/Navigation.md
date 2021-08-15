@@ -32,11 +32,11 @@ Blockquotes
 > We're living the future so
 > the present is our past.
 
-1. __Item 1__
-1. *Item 2*
-1. __Item 3__
-   1. *Item 3a*
-   1. __Item 3b__
+1. **Item 1**
+1. _Item 2_
+1. **Item 3**
+   1. _Item 3a_
+   1. **Item 3b**
       1. Item 3bA
       1. Item 3bB
 
@@ -85,8 +85,9 @@ export const App = () => {
 ```
 
 ### Props
-- expandable 
-- isExpanded 
+
+- expandable
+- isExpanded
 
 | Name       | Type                    | Default | Description                                                                                                                                                                                                                                                        |
 | ---------- | ----------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -170,6 +171,9 @@ export const App = () => {
 | backgroundColor | BoxProps["bgcolor"]                  | "primary.main"         | CSS backgroundColor property supporting some mui theme values                                                                                                                     |
 | color           | BoxProps["color"]                    | "primary.contrastText" | CSS color property supporting some mui theme values                                                                                                                               |
 | height          | BoxProps["height"]                   | "auto"                 | height shortcut, for layout purposes relevant to control height programmatically                                                                                                  |
+<!-- expandable -->
+<!-- collapsedLabel Show Props -->
+<!-- expandedLabel Hide Props -->
 
 ## Drawer
 
@@ -225,6 +229,9 @@ export const App = () => {
 | sx                 | object                                                     |                                                                  | [The system prop that allows defining system overrides as well as additional CSS styles. See the \`sx\` page for more details.](https://next.material-ui.com/system/the-sx-prop/) |
 | transitionDuration | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen } | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object.                                           |
 | variant            | 'permanent', 'persistent', 'temporary'                     | 'temporary'                                                      | The variant to use.                                                                                                                                                               |
+<!-- expandable -->
+<!-- collapsedLabel Show Props -->
+<!-- expandedLabel Hide Props -->
 
 ### Props SwipeableDrawer
 
@@ -242,6 +249,9 @@ export const App = () => {
 | SwipeAreaProps            | object                                                     |                                                                  | The element is used to intercept the touch events on the edge.                                                                                                |
 | swipeAreaWidth            | number                                                     | 20                                                               | The width of the left most (or right most) area in `px` that the drawer can be swiped open from.                                                              |
 | transitionDuration        | number, { appear?: number, enter?: number, exit?: number } | { enter: duration.enteringScreen, exit: duration.leavingScreen } | The duration for the transition, in milliseconds. You may specify a single timeout for all transitions, or individually with an object.                       |
+<!-- expandable -->
+<!-- collapsedLabel Show Props -->
+<!-- expandedLabel Hide Props -->
 
 ## Breadcrumbs
 
